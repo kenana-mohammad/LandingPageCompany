@@ -1,0 +1,122 @@
+.portifolio
+{
+    width: 100%;
+    margin: 10px auto;
+
+}
+.km-container-row{
+display: flex;
+background-color: rgb(73, 73, 73);
+justify-content: space-between;
+align-items: center;
+width: 100%;
+margin: 10px auto;
+padding: 0px 100px;
+}
+
+.km-container-row .head-text{
+margin-top: 20px ;
+color: white;
+max-width: 500px;
+margin: 30px auto;
+line-height: 40px;
+font-size: 5px;
+}
+.km-container-row .head-text h3{
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 30px;
+    text-align: center;
+    text-transform:capitalize ;
+}
+.km-container-row .head-text p{
+    text-align: center;
+
+}
+.card-portifolio{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 10px auto;
+}
+.km-card .card-item
+{
+    box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+    padding: 40px;
+    align-content: center;
+    width: 300px!important;
+}
+.km-card .card-item:hover
+{
+    box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+    padding: 40px;
+    align-content: center;
+ height: 100%!important;
+}
+.icon{
+    position: absolute;
+    right:90px;
+    bottom: -20px;
+    border-radius: 100px ;
+    padding: 10px;
+
+    border: none;
+    color: white;
+    background-color: #01959a;
+}
+.icon svg{
+    width: 100%;
+    font-size: 2rem;
+    height: 100%;
+    font-weight: 700;
+    color: white;
+}
+.icon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 1s ease-out;
+
+}
+.km-container{
+    position: relative;
+    z-index: 11;
+}
+
+@media screen and (min-width:300px) and (max-width:600px){
+
+    .km-container-row .head-text{
+        min-width: 200px;
+        margin-top: 20px ;
+        margin: auto;
+        text-align: left;
+        color: white;
+        line-height: 40px;
+        font-size: 8px!important;
+       }
+       .km-container-row .head-text p{
+      font-size: 12px;
+      margin: auto;
+      text-align: center;
+      padding-right:  10px;
+       }
+}
+@media screen  and (min-width:300px) and (max-width:600px) {
+
+        .card-portifolio{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+            align-items: center;
+            margin: 10px auto;
+        }
+        .km-card .card-item
+        {
+            box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+            align-content: center;
+
+        }
+}

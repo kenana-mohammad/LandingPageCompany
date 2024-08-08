@@ -1,0 +1,45 @@
+.app .km-carousel
+{
+height: 100vh!important;
+position: absolute;
+z-index: -8px;
+height: 100vh;
+top: -20px ;
+width: 100%;
+
+}
+.app .slide{
+    position: relative;
+    z-index: 1px;
+    top:-2px;
+    height: 100vh;
+
+}
+.km-carousel button[type="button"]{
+  display: none!important;
+}
+/* .slide{
+    position: relative;
+    z-index: 1px;
+
+}
+.overlay
+{
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    z-index: 999px;
+    position: absolute;
+
+} */
+.app .km-carousel  .carousel-item {
+    height: 100%!important;
+
+}
+.carousel-item{
+    height: 100%!important;
+}
+img.img-carousel
+{
+    height:100vh!important;
+}

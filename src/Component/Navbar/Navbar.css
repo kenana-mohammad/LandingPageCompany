@@ -1,0 +1,193 @@
+.app .km-nav{
+    background-color: black;
+    color: white;
+    display: flex;
+     position: fixed;
+justify-content: space-between;
+width: 100%;
+top:0;
+gap: 10px;
+z-index: 999;
+align-items: center;
+/* padding: 0px 10px 0px 0px ; */
+    text-transform: capitalize;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0,.7);
+}
+
+.app .km-nav .km-logo{
+    width: 10%;
+    align-items: center;
+    text-align: center;
+ text-align: center;
+    background-color: #01959a;
+}
+.app .km-nav .km-logo:hover{
+    cursor: pointer;
+}
+.app .km-nav .km-logo .title-nav{
+display: inline-block;
+font-size: 16px;
+text-align: center;
+padding-top: 10px;
+}
+.app .km-nav .km-logo .km-icon{
+     font-size: 20px;
+     text-align: center;
+     margin-bottom: 1px;
+
+}
+.km-nav .item-nav
+{
+    width: 80%;
+    align-items: center;
+    margin:auto;
+}
+.km-nav .item-nav ul {
+    min-width: 50%;
+    margin-top: 20px;
+}
+.km-nav .item-nav ul li{
+    display: inline-block;
+    padding: 10px;
+
+}
+.km-nav .item-nav ul li  svg{
+    font-size: 30px;
+    font-weight: 600;
+ }
+ .km-nav .item-nav ul li:last-child{
+    position: relative;
+    cursor: pointer;
+
+ }
+ .km-nav .item-nav ul li:last-child ul.dropdown{
+    position: absolute;
+    width: 100%;
+bottom: 0;
+z-index: 99999;
+left: -10px;
+transform: translateX(-1000px);
+top:40px;
+opacity: 0;
+ }
+ .km-nav .item-nav ul li:last-child ul.dropdown li{
+    background-color:#01959a;
+   color: aliceblue;
+display: block;
+text-align: center;
+
+ }
+ .km-nav .item-nav ul li:last-child:hover .dropdown{
+    transform: translateX(0px);
+opacity: 1;
+transition: all .5s ease-out;
+
+
+ }
+ .km-nav .login  {
+    gap: 10px;
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+ }
+ .km-nav .login a{
+    color: white;
+align-items: center;
+text-align: center;
+text-decoration: none;
+ }
+ .km-nav .km-menu-btn
+ {
+    background-color: #000000;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    padding:20px ;
+    border: none;
+
+}
+    .km-nav .km-menu-btn i {
+    color: rgb(255, 255, 255)!important;
+ }
+ .km-nav .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top:8%;
+    padding-top: 10px;
+    position: fixed;
+    transition: 1s all;
+    background-color: #01959a;
+    color: white;
+      width: 50vw;
+      font-size: 1.3rem;
+      z-index: 999;
+      left: 50%;
+      transform: translateX(-200%);
+ }
+ .km-nav .menu.active
+ {    transform: translateX(-50%);
+transition: all .5 ease-out;
+
+
+ }
+ .km-nav menu.active ul{
+ width: max-content;
+ }
+ @media screen  and (max-width:992px){
+    .app .km-nav .km-logo{
+        min-width: 100px;
+        align-items: center;
+        text-align: center;
+     text-align: center;
+        background-color: #01959a;
+    }
+    .app .km-nav .km-logo:hover{
+        cursor: pointer;
+    }
+    .app .km-nav .km-logo .title-nav{
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    }
+    .app .km-nav .km-logo .km-icon{
+         font-size: 20px;
+         text-align: center;
+         margin-bottom: 1px;
+
+    }
+ .km-nav .item-nav , .km-nav .login{
+    display: none;
+ }
+ .km-nav .km-menu-btn{
+    display: block;
+
+ }
+ .km-nav .km-menu-btn i{
+    color: white!important;
+    font-size: 20px;
+
+ }
+}
+@media screen  and (min-width:993px){
+    .km-nav .menu.active
+    {
+        display: none;
+    }
+
+}
+@media screen  and (max-width:500px){
+    .app .km-nav{
+        padding: 0px 30px!important;
+    }
+
+
+
+}

@@ -1,0 +1,77 @@
+.card-portifolio .km-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
+.card-portifolio .km-card .card-iteam{
+   width: 300px;
+
+}
+/* .card-portifolio .card-item:hover{
+    transform: scale(1.1)!important;
+} */
+.card-portifolio .km-card img.km-img-card{
+    max-width: 100%!important;
+    height: 20%;
+
+}
+.card-portifolio .km-card .card-head{
+    background-color: white;
+    max-width: 100%;
+    padding: 10px;
+}
+.card-portifolio .km-card .card-head .card-title{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 3px;
+    max-width: 100%;
+}
+@media screen and (max-width:992px) {
+    html{
+        font-size: 10px;
+    }
+    .km-container-row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media screen and (max-width:882px){
+    html{
+        font-size: 6px;
+    }
+    .card-portifolio .km-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        gap: 30px;
+    }
+    .card-item{
+    max-width:300px!important;
+        margin: 10px auto;
+        align-items: center;
+
+    }
+    .card-portifolio .km-card .card-head .card-title{
+        width: 100%;
+
+
+    }
+.head-text{
+    margin:10px auto;
+    width: 90%;
+    text-align: center;
+}
+.head-text h1{
+margin: auto;
+width: 30%;
+margin-bottom: 20px;
+text-align: center;
+}
+}
